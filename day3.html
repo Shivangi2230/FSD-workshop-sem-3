@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information System</title>
+</head>
+<body>
+
+<script>
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    let num1 = prompt("Enter first no");
+    let num2 = prompt("Enter second no");
+
+    num1 = Number(num1);
+    num2 = Number(num2);
+
+    let result = multiply(num1, num2);
+
+    let studentName = prompt("Enter student name");
+    let rollNo = prompt("Enter student roll no.");
+
+    let m1 = Number(prompt("Enter M1 marks"));
+    let m2 = Number(prompt("Enter M2 marks"));
+    let m3 = Number(prompt("Enter M3 marks"));
+    let m4 = Number(prompt("Enter M4 marks"));
+    let m5 = Number(prompt("Enter M5 marks"));
+
+    let total = m1 + m2 + m3 + m4 + m5;
+    let percentage = total / 5;
+    let grade;
+
+    if (m1 >= 40 && m2 >= 40 && m3 >= 40 && m4 >= 40 && m5 >= 40) {
+        result = "PASS";
+
+        if (percentage >= 90)
+            grade = "A";
+        else if (percentage >= 80)
+            grade = "B";
+        else if (percentage >= 70)
+            grade = "C";
+        else if (percentage >= 60)
+            grade = "D";
+        else
+            grade = "E";
+    } else {
+        result = "FAIL";
+        grade = "F";
+    }
+
+    document.write("Student Name: " + studentName + "<br>");
+    document.write("Roll No: " + rollNo + "<br>");
+    document.write("Total: " + total + "<br>");
+    document.write("Percentage: " + percentage + "%<br>");
+    document.write("Grade: " + grade + "<br>");
+    document.write("Result: " + result);
+</script>
+
+</body>
+</html>

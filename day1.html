@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:lavenderblush;
+            margin:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:navy;
+        }
+
+        h2{
+            color:goldenrod;
+        }
+
+        input, select, button{
+            padding:8px;
+            margin:5px;
+        }
+
+        button{
+            background-color:hotpink;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:darkblue;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+            background:beige;
+        }
+
+        table, th, td{
+            border:1px solid goldenrod;
+        }
+
+        th{
+            background-color:lightblue;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+        .total{
+            font-weight:bold;
+            margin-top:20px;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+<h1>Student Management System</h1>
+
+<h2>Add New Student</h2>
+
+<form>
+    <input type="text" placeholder="Student Name">
+    <input type="text" placeholder="Roll Number">
+    <input type="text" placeholder="Branch">
+    <button type="button">Add Student</button>
+</form>
+
+<h2>Search Student</h2>
+
+<input type="text" placeholder="Enter Student Name">
+<button type="button">Search</button>
+
+<h2>Filter by Branch</h2>
+
+<select>
+    <option>All</option>
+    <option>CSE</option>
+    <option>IT</option>
+    <option>ECE</option>
+    <option>ME</option>
+</select>
+
+<h2>Student List</h2>
+
+<table>
+    <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Action</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Lavi</td>
+        <td>ECE</td>
+        <td><button type="button">Delete</button></td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Prateek</td>
+        <td>IT</td>
+        <td><button type="button">Delete</button></td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Shivangi</td>
+        <td>CSE-DS</td>
+        <td><button type="button">Delete</button></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Teena</td>
+        <td>CSE-AIML</td>
+        <td><button type="button">Delete</button></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Urfa</td>
+        <td>CSE</td>
+        <td><button type="button">Delete</button></td>
+        
+    </tr>
+</table>
+
+<p class="total">Total Students: 5</p>
+
+
+
+</body>
+</html>

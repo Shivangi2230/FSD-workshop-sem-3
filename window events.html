@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Events</title>
+
+    <script>
+        let newWindow;
+
+        function openwindow() {
+            alert("Window is opening");
+
+            newWindow = window.open(
+                "",
+                "_blank",
+                "height=400,width=500"
+            );
+        }
+
+        function closewindow() {
+            alert("Window is closing");
+
+            newWindow.close();
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Window Events</h2>
+
+    <button onclick="openwindow()">Open Window</button>
+    <button onclick="closewindow()">Close Window</button>
+
+</body>
+</html>

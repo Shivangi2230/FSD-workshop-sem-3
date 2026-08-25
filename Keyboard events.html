@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyboard Events</title>
+
+    <style>
+        #keyboard {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: lightgreen;
+            color: blue;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        input {
+            width: 200px;
+            margin: 10px;
+            padding: 8px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="keyboard">
+
+    <h1>Keyboard Events</h1>
+
+    <input type="text"
+           placeholder="Keyboard Down"
+           onkeydown="document.getElementById('keyboard').style.backgroundColor='yellow'">
+
+    <input type="text"
+           placeholder="Keyboard Up"
+           onkeyup="document.getElementById('keyboard').style.backgroundColor='pink'">
+
+    <input type="text"
+           placeholder="Keyboard Press"
+           onkeypress="document.getElementById('keyboard').style.backgroundColor='orange'">
+
+</div>
+
+</body>
+</html>
