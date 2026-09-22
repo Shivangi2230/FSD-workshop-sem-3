@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            margin: 30px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h3 {
+            color: darkblue;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin: 5px;
+        }
+
+        button {
+            background-color: lightgreen;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Quiz</h1>
+
+    <h3>Student Details</h3>
+
+    Name:
+    <input type="text" id="name">
+    <br><br>
+
+    Roll No:
+    <input type="text" id="rollno">
+    <br><br>
+
+    Section:
+    <input type="text" id="section">
+    <br><br>
+
+    <hr>
+
+    <h2>Questions</h2>
+
+    <p>1. What does DOM stand for in web development?</p>
+
+    <input type="radio" name="q1" id="q1a"> Data Object Model
+    <br>
+
+    <input type="radio" name="q1" id="q1b"> Document Object Model
+    <br>
+
+    <input type="radio" name="q1" id="q1c"> Dynamic Orientation Model
+    <br>
+
+    <input type="radio" name="q1" id="q1d"> Document Orientation Model
+    <br>
+
+    <hr>
+
+    <p>2. What is the output of typeof null in JavaScript?</p>
+
+    <input type="radio" name="q2" id="q2a"> "null"
+    <br>
+
+    <input type="radio" name="q2" id="q2b"> "undefined"
+    <br>
+
+    <input type="radio" name="q2" id="q2c"> "object"
+    <br>
+
+    <input type="radio" name="q2" id="q2d"> "number"
+    <br>
+
+    <hr>
+
+    <p>3. In web development, what is the core role of a web server?</p>
+
+    <input type="radio" name="q3" id="q3a">
+    To manage and render the local user interface
+    <br>
+
+    <input type="radio" name="q3" id="q3b">
+    To execute client-side animation scripts
+    <br>
+
+    <input type="radio" name="q3" id="q3c">
+    To process incoming client requests and serve web pages
+    <br>
+
+    <input type="radio" name="q3" id="q3d">
+    To handle client-side form validations exclusively
+    <br>
+
+    <hr>
+
+    <p>4. What is the primary function of AJAX in web development?</p>
+
+    <input type="radio" name="q4" id="q4a">
+    To define the layout and structure of web content
+    <br>
+
+    <input type="radio" name="q4" id="q4b">
+    To style the visual presentation of web pages
+    <br>
+
+    <input type="radio" name="q4" id="q4c">
+    To enable asynchronous communication between the client and server
+    <br>
+
+    <input type="radio" name="q4" id="q4d">
+    To manage and create database schemas on the server
+    <br>
+
+    <hr>
+
+    <p>5. Which architectural pattern separates an application into Model, View, and Controller components?</p>
+
+    <input type="radio" name="q5" id="q5a">
+    Layered Architecture
+    <br>
+
+    <input type="radio" name="q5" id="q5b">
+    Client-server Architecture
+    <br>
+
+    <input type="radio" name="q5" id="q5c">
+    Microservices Architecture
+    <br>
+
+    <input type="radio" name="q5" id="q5d">
+    MVC Architecture
+    <br>
+
+    <hr>
+
+    <button onclick="submitQuiz()">Submit Quiz</button>
+
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
